@@ -1,0 +1,11 @@
+body{
+    background: rgb(253, 253, 206);
+    }
+table{
+    background: blueviolet;
+    border:2px solid black;
+    }
+.button1{
+    background: greenyellow;
+    border: 1px solid red;
+    }
