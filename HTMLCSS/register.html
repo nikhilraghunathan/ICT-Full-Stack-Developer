@@ -22,60 +22,73 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="./style.css" /> -->
 
+        <script src="./form.js" >
+        </script>
 </head>
 <body>
     <h1> Registration Form </h1>
-    <table class="table">
-        <tr>
-            <td> Name </td>
-            <td> <input type="text" /> </td>
-        </tr>
+    
+    <form>
 
-        <tr>
-                <td> Phone no </td>
-                <td> <input type="text" /> </td>
-        </tr>
+        <table class="table">
+            <tr>
+                <td> Name </td>
+                <td> <input type="text" id="name" required /> </td>
+            </tr>
+    
+            <tr>
+                    <td> Phone no </td>
+                    <td> <input type="text" id="phno" pattern="[6789]{1}[0-9]{9}" required /> </td>
+            </tr>
+    
+            <tr>
+                    <td> E-Mail </td>
+                    <td> <input type="text" id="email" /> </td>
+            </tr>
+    
+            <tr>
+                    <td> Place </td>
+                    <td> <input type="text" id="place" /> </td>
+            </tr>
+    
+            <tr>
+                    <td> DOB </td>
+                    <td> <input type="date" id="date" /> </td>
+            </tr>
+    
+            <tr>
+                    <td> Username </td>
+                    <td> <input type="text" id="username" /> </td>
+            </tr>
+    
+            <tr>
+                    <td> Password </td>
+                    <td> <input type="text" id="password" /> </td>
+            </tr>
+    
+            <tr>
+                    <td> Confirm Password </td>
+                    <td> <input type="text" id="confirmpass" /> </td>
+            </tr>
+    
+            <tr>
+                <td> </td>
+                <td> <button type="submit" class="btn btn-dark" onclick="Readme();" > Register </button> </td>
+            </tr>
+    
+            <tr>
+                <td> </td>
+                <td> <a href="./index.html"> Go to login page</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="result" ></p>
+                </td>
+            </tr>
+        </table>
 
-        <tr>
-                <td> E-Mail </td>
-                <td> <input type="text" /> </td>
-        </tr>
+    </form>
 
-        <tr>
-                <td> Place </td>
-                <td> <input type="text" /> </td>
-        </tr>
-
-        <tr>
-                <td> DOB </td>
-                <td> <input type="date" /> </td>
-        </tr>
-
-        <tr>
-                <td> Username </td>
-                <td> <input type="text" /> </td>
-        </tr>
-
-        <tr>
-                <td> Password </td>
-                <td> <input type="text" /> </td>
-        </tr>
-
-        <tr>
-                <td> Confirm Password </td>
-                <td> <input type="text" /> </td>
-        </tr>
-
-        <tr>
-            <td> </td>
-            <td> <button class="btn btn-dark" > Register </button> </td>
-        </tr>
-
-        <tr>
-            <td> </td>
-            <td> <a href="./index.html"> Go to login page</a></td>
-        </tr>
-    </table>
     <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab eos necessitatibus, exercitationem veniam sequi quae mollitia fuga reprehenderit eaque et, amet perspiciatis consequatur ea sint sed laboriosam commodi, rem cum. </p>
 </body>
 </html>
