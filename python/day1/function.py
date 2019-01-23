@@ -2,9 +2,9 @@ def printme(str):
     print(str)
     return
 
-printme("first call to printt")
-printme("second cal to printt")
-
+printme("first call to printme")
+printme("second cal to printme")
+#################################################################################
 def printt(a,b):
     c=a*b
     c1=a+b
