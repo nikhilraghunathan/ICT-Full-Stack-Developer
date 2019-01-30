@@ -6,6 +6,10 @@ app.use(bodyparser.urlencoded({extended:true}))
 
 app.set('view engine', 'ejs');
 
+var books = [{bookname:"balarama",author:"balaraman", price:"Rs.10"},
+             {bookname:"balabhoomi",author:"balabhooman", price:"Rs.10"},
+             {bookname:"VISUDHA BALAMANGALAM",author:"DINKAN", price:"Rs.1"}]
+
 var exp = require('./export');
 app.get("/",function(req,res){
     res.render("login");
@@ -19,7 +23,7 @@ app.post("/home",function(req,res){
     {   res.sendFile(__dirname + "/templates/2home.html");    }
     else{   res.send("incorrect password");     }
     res.render("home",{
-        user:uname
+        user:uname, data:books
     })
 })
 

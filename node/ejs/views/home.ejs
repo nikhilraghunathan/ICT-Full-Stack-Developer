@@ -8,8 +8,29 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
-    <h1>
-        welcome <%= user %>
-    </h1>
+    <h1 style="font-size:200%;">
+        Welcome <%= user %>. Nice to meet you :P
+    </h1></br></br>
+    <h2> book details </h2>
+    <table class="table table-striped">
+        <tr>
+            <th> Book Name </th>
+            <th> Author </th>
+            <th> Price </th>
+            <th>    </th>
+        </tr>
+        <% for(var i=0;i<data.length;i++)
+            {  %>
+              
+                <tr>
+                    <td> <%= data[i]['bookname'] %> </td>
+                    <td> <%= data[i]['author'] %> </td>
+                    <td> <%= data[i]['price'] %> </td>
+                    <td> <input type="button" value="Add to cart" /> </td>
+                </tr>
+             
+        <%  }
+        %>
+    </table>
 </body>
 </html>
