@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delete Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Delete page</h1>
+    <form action="/deleted" method="POST" >
+        <select name="employ">
+        <% if(data.length){
+            for(var i=0;i<data.length ;i++) { %>
+                <option value="<%=data[i].ename %>" > <%=data[i].ename %> </option> 
+            <% } } else { %>
+                 <p>Data not found tta !!</p>
+        <% } %>
+        </select>
+        <input type="submit" value="Delete"/>
+    </form>
+</body>
+</html>

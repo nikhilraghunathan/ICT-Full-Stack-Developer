@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Editing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Editing page</h1>
+    <form action="/edited" method="POST" >
+        EID:<input type="text" name="a_eid" value="<%=data[0].eid %>" /></br>
+        NAME:<input type="text" name="a_ename" value="<%=data[0].ename %>"/></br>
+        DEPT:<input type="text" name="a_dept" value="<%=data[0].dept %>"/></br>
+        SALARY:<input type="text" name="a_salary" value="<%=data[0].salary %>"/></br>
+        LOCATION:<input type="text" name="a_loc" value="<%=data[0].loc %>"/></br>
+        DOB:<input type="text" name="a_dob" value="<%=data[0].DOB %>"/></br>
+        <input type="submit" value="Edit"/>
+    </form>
+</body>
+</html>

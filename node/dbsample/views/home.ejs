@@ -10,7 +10,17 @@
 
 <body>
     <h1>Home page</h1>
-    <form action="/insert" method="get">
+    <ul>
+        <li><a href="/" > New Employee </a> </li>
+        <li><a href="/view" > View Employee </a> </li>
+        <li><a href="/edit" > Edit Employee </a> </li>
+        <li><a href="/delete" > Delete Employee </a> </li>
+    </ul>
+    <h2> New Employee </h2>
+
+    <form action="/insert" method="post">
+        <input type="text" name="name" />
+        <input type="text" name="salary" />
         <input type = "submit" value = "insert"/>
     </form>
 </body>
