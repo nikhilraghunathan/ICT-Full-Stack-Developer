@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  </head>
+
+  <body>
+      <div class="container-fluid">
+            <h1>Homeee</h1>
+            <p>Welcome to Home page mr <%= name%></p>
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>Insert</h6>
+                    <form action="/insert" method = "POST">
+                        ID:<input type="text"  name="txt_id"/><br/>
+                        Name:<input type="text"  name="txt_name"/><br/>
+                        Author:<input type="text" name="txt_author"/><br/>
+                        Publisher:<input type="text" name="txt_publisher"/><br/>
+                        Price:<input type="text" name="txt_price"/><br/><br/>
+                        
+                        <input type="submit" class="btn btn-dark" value="Insert"/>
+                    </form><br/>
+                </div>
+
+                <div class="col-md-3">
+                        <h6>Delete</h6>
+                    <form action="/delete" method = "POST">
+                        Enter ID to be deleted:<input type="text"  name="txt_id"/><br/><br/>
+                        <input type="submit" class="btn btn-dark" value="Delete"/>
+                    </form><br/>
+                </div>
+
+                <div class="col-md-3">
+                        <h6>Update</h6>
+                    <form action="/update" method = "POST">
+                        Enter ID to be updated:<input type="text"  name="txt_name"/><br/><br/>
+                        <input type="submit" class="btn btn-dark" value="Update"/>
+                    </form><br/>
+                </div>
+
+                <div class="col-md-3">
+                        <h6>View</h6>
+                    <form action="/view" method = "POST">
+                        Enter Name of book to be viewed:<input type="text"  name="txt_name"/><br/><br/>
+                        <input type="submit" class="btn btn-dark" value="View"/>
+                    </form><br/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>Upload file</h6>
+                    <form action="/upload" method = "POST" enctype="multipart/form-data">
+                        Click to browse file:<input type="file"  name="img"/><br/><br/>
+                        <input type="submit" class="btn btn-dark" value="Upload"/>
+                    </form>
+                </div>
+            </div>
+    </div>
+  </body>
+</html>
